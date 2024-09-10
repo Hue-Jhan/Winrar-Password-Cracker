@@ -8,14 +8,14 @@ if not exist "C:\Program Files\7-Zip" (
 )
 
 echo.
-set /p archive="Enter Archive: "
+set /p archive="Enter Archive path: "
 if not exist "%archive%" (
 	echo Archive not found.
 	pause
 	exit
 )
 
-set /p wordlist="Enter Wordlist: "
+set /p wordlist="Enter Wordlist path: "
 if not exist "%wordlist%" (
 	echo Wordlist not found.
 	pause
